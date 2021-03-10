@@ -64,7 +64,7 @@ objects:
           noCache: true
           from:
             kind: DockerImage
-            name: registry.fedoraproject.org/fedora:30
+            name: registry.fedoraproject.org/fedora:32
           buildArgs:
             - name: OSBS_CLIENT_PIP_REF
               value: ${OSBS_CLIENT_PIP_REF}

@@ -13,7 +13,7 @@ COPY etc/ /etc/
 
 # Setup for eliminating differences between python versions
 ENV PY_VER_MAJOR="3" \
-    PY_VER_MAJOR_MINOR="3.7"
+    PY_VER_MAJOR_MINOR="3.8"
 
 ENV PYTHON="python${PY_VER_MAJOR_MINOR}" \
     PIP="pip${PY_VER_MAJOR_MINOR}"
