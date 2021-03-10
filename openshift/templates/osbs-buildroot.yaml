@@ -12,7 +12,7 @@ labels:
 parameters:
   - name: OSBS_BOX_REPO
     description: Repository to build the image from
-    value: https://github.com/containerbuildsystem/osbs-box
+    value: https://github.com/mike-kingsbury/osbs-box
     required: true
 
   - name: OSBS_BOX_VERSION

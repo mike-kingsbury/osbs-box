@@ -3,7 +3,7 @@
 
 # OSBS-Box repository and version (branch, tag or commit ID)
 # Used by openshift when building images
-osbs_box_repo: https://github.com/containerbuildsystem/osbs-box
+osbs_box_repo: https://github.com/mike-kingsbury/osbs-box
 osbs_box_version: master
 
 # Directory for keeping miscellanous osbs-box data
