@@ -40,7 +40,7 @@ cachito_namespace: osbs-cachito
 
 buildroot_python_version: 3
 
-atomic_reactor_repo: https://github.com/containerbuildsystem/atomic-reactor
+atomic_reactor_repo: https://github.com/mike-kingsbury/atomic-reactor
 atomic_reactor_version: master
 
 osbs_client_repo: https://github.com/containerbuildsystem/osbs-client

@@ -28,7 +28,7 @@ parameters:
   - name: ATOMIC_REACTOR_PIP_REF
     description: >
       Pip URL to install atomic-reactor from (git+<repo>[@<version>])
-    value: git+https://github.com/containerbuildsystem/atomic-reactor
+    value: git+https://github.com/mike-kingsbury/atomic-reactor
     required: true
 
   - name: OSBS_CLIENT_PIP_REF
