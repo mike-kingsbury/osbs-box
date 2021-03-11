@@ -4,10 +4,12 @@ FROM fedora
 # (docs include the SQL schema needed to initialize the DB)
 RUN dnf --setopt tsflags="" -y install "koji"
 
+# Install pip
+RUN dnf -y install "python3-pip" 
+
 # Install git-core, it will be needed when pip-installing packages from git
 RUN dnf -y install "git-core" && \
     dnf clean all
-
 
 RUN ls -latr /usr/bin
 
