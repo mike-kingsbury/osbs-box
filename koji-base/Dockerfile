@@ -8,7 +8,7 @@ RUN dnf --setopt tsflags="" -y install "koji"
 RUN dnf -y install "git-core" && \
     dnf clean all
 
-RUN ls -latr /usr/bin/pip*
+RUN ls -latr /usr/bin/pip
 
 
 COPY bin/ /usr/local/bin/
