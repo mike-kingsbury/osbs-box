@@ -3,7 +3,7 @@ FROM golang:buster AS build
 RUN go get -v "github.com/openshift/imagebuilder/cmd/imagebuilder"
 
 
-FROM registry.fedoraproject.org/fedora:30
+FROM registry.fedoraproject.org/fedora:32
 
 # Choose python version
 ARG PY_VER="3"
@@ -26,6 +26,7 @@ RUN dnf -y install "fedpkg-minimal" \
 # Install stuff that will be needed for pip-installing OSBS components from git
 RUN dnf -y install "git-core" \
                    "python${PY_VER}-devel" \
+                   "python${PY_VER}-pip" \
                    "krb5-devel" \
                    "xz-devel" \
                    "gcc" && \
