@@ -1,4 +1,4 @@
-FROM fedora
+FROM fedora:32
 
 # Install koji, make sure docs are not excluded by unsetting tsflags
 # (docs include the SQL schema needed to initialize the DB)
@@ -10,8 +10,6 @@ RUN dnf -y install "python3-pip"
 # Install git-core, it will be needed when pip-installing packages from git
 RUN dnf -y install "git-core" && \
     dnf clean all
-
-RUN ls -latr /usr/bin
 
 COPY bin/ /usr/local/bin/
 COPY etc/ /etc/
